@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <title>
+        Title goes here
+    </title>
+</head>
+
+<body>
+    <! Forms in html>
+    <! html form tags and attribute >
+    <a href="#person">CLick here to view a person</a>
+    <table height="1000" border="2" bordercolor="blue"></table>
+    <img src="assets/dog.jpg" height="2000" width="1000">
+    <a id="person">Article on person</a>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti doloribus quisquam quam aspernatur. Vel ipsa voluptate ipsam doloribus exercitationem! Quo facere sunt enim corrupti aspernatur? Ratione, commodi? Placeat, earum debitis?
+
+    </p>
+
+    <form name="details" action="send.php" method="POST">
+        <! name attribute is the name of the form >
+        <! action attribute tells the action , and the php file to it >
+        <! method >
+        <table width="50%" height="50%" border="0">
+            <tr align="center">
+                <td>
+                    Name
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    Class
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    Roll number
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    Description
+                </td>
+                <td>
+                    <input type="text" width="100%" height="75%">
+                </td>
+                <tr align="center">
+                    <td>
+                        Phone number
+                    </td>
+                    <td>
+                        <input type="number">
+                    </td>
+                </tr>
+            </tr>
+        </table>
+    </form>
+
+    <! Method >
+    <! Method is used to transmit hte data between the client and the server ? 
+    <! There are 2 methods - GET and POST >
+    <! the GET method , requssts the data from the specfied resource . 
+    <! THe POST method , posts the data to process to the specified resource >
+
+    <! GET , name/value pairs are sent in the URL string >
+    <! Example : Send.php?fname=atharva&lname=smith    >
+
+    <! the POST method, sends the name and the value pair in the HTTP message body? 
+    <! example - POST send.php HTTP/1.1fname=atharva&name=smith  >
+
+    <! Get requests >
+    <! get requests can be cached and they remain in the  browser history >
+    <! They should only be used to retrieve data >
+    <! They have length restrictions >
+    <! They should not be used for sensitive data >
+    <! They can be bookmarked >
+
+    <! POST method >
+    <! No restrictions on the data length >
+    <! Cannot be bookmarked ? 
+    <! Do remain in the browser history >
+    <! Requests are never cached >
+
+
+    <! Html forms and input >
+
+    <! making a form >
+    <form name="employment" action="send.php" method="POST">
+        <table width="600" border="1" cellspacing="2" cellpadding="2">
+            <tr>
+                <td>
+                    Employment Application
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    First name
+                </td>
+                <td>
+                    <input type="text" name="fname" maxlength="50" />
+                    <! name attribute is the name of the input >
+                    <! maxlength attribute means the maximum characters that can be entered in the input box >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Last name
+                </td>
+                <td>
+                    <input type="text" name="fname" maxlength="50" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Position
+                </td>
+                <td>
+                    <select name="position">
+                        <! select gives you many options to select from> 
+                        <option value = "A">
+                            <! option is to specify the option > 
+                            Software Engineer
+                        </option> 
+                        <option value = "B">
+                            Operations Applications Software Engineer 
+                        </option>
+                        <option value = "C">
+                            Machine Learning Engineer 
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Expereince
+                </td>
+
+                <td>
+                    <select name="Experience">
+                        <! select gives you many options to select from> 
+                        <option value = "one">
+                            <! the value attribute is the atribute which is used by the PHP script to as an input or output to perform operations> 
+                            <! option is to specify the option > 
+                            1 Year 
+                        </option> 
+                        <option value = "two">
+                            2 Year 
+                        </option>
+                        <option value = "three">
+                            3 Year 
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Job type
+                </td>
+                <td>
+                    <input type="checkbox" name="ft" />Full-Time
+                    <input type="checkbox" name="pt" />Part-Time
+                    <input type="checkbox" name="ct" />Contract
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Employment Status
+                </td>
+                <td>
+                    <input type="radio" name="estatus" value="employed" />Employed
+                    <input type="radio" name="estatus" value="unemployed" />Unemployed
+                    <input type="radio" name="estatus" value="student" />Student
+                    <! initialize same name to hte radio buttons , to indicate that the radio buttons belong from the same group and,that when one radio button is selected, and the next one is selected, then both the radio buttons should not be in selected position at the same time, to avoid this, use same name for the radio buttons >
+                    <! value attribute is the value given that is used by hte PHP script, to perform operations >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Additional Comments
+                </td>
+                <td>
+                    <textarea name="comments" cols="45" rows="5"></textarea>
+                    <! the textarea cerates a text area >
+                    <! here the textarea occupies 45 columns and 5 rows >
+                    <! the name of the textarea is 'comments' >
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <input type="submit" name="submit" value="submit">
+                    <input type="submit" name="reset" value="reset">
+                </td>
+            </tr>
+
+    </form>
+</body>
+
+</html>
