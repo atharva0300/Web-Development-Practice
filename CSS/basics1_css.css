@@ -1,0 +1,24 @@
+Body {
+    background-color: pink;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: Segoe UI;
+    color: red;
+}
+
+h2,
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+
+p {
+    color: green;
+    font-size: 15px;
+}
+
+h4 {
+    color: rgb(130, 200, 100);
+}

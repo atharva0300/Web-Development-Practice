@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta charset="utf-8 ">
+    <title>
+        Title goes here
+    </title>
+
+    <style type="text/css">
+        #background {
+            background-image: url(assets/abstract1.jpg);
+            padding: 40px;
+        }
+        
+        #textbox {
+            width: auto;
+            height: 100px;
+            opacity: 80%;
+            background-color: black;
+            padding: 10px;
+        }
+        
+        .text {
+            color: white;
+        }
+        
+        #background2 {
+            background-color: blue;
+            height: 500px;
+            min-width: 600px;
+            height: 100vh;
+            width: auto;
+        }
+    </style>
+
+    <! min-width is the minimum width of hte division >
+    <! in the above example, the minimum width is set to 600px , which means that, event when the window screen is minimized , to a width less than 600px,  the width of that class/division does not change. You will see a scroll bar that indicates that the division width has not changed and the minimum width has been maintained>
+    <! the max-width sets the maximum width to the division >
+    <! here the maximum width is 800px , meaning that even if hte windoe is maximized to a width greater than 800px, the width of the division will remain the same, as the max-wit is 800px>
+    <! when width : auto   , is set to auto, then the division occupies full width of the window >
+
+
+    <! NOTE THAT , if the height os the division is set to 100%, then the height of the division will never occupy 100% ( of full height ) of the window, it will instead show blank screen>
+    <! to tackle that, use 'viewport' , for height use 'viewheight' ( vh )>
+
+</head>
+
+<body>
+    <div id="background">
+        <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, officia molestiae dolorem repellendus provident sed, voluptatum atque iusto sint facere sequi nisi non, distinctio illum officiis minus! Facilis unde quos delectus accusamus harum quidem officiis
+            vero placeat! Nisi fugit, sequi similique porro dolorem rerum illum cumque temporibus error repellendus veritatis!
+        </div>
+    </div>
+
+    <div id="background2">
+
+    </div>
+
+</body>
+
+</html>
