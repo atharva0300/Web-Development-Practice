@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+}
+
+#topbar {
+    background-color: lightblue;
+    padding: 24px 48px;
+}
+
+.menu-item {
+    /* to change the properties of the link */
+    font-size: 24px;
+    margin: right;
+    color: black;
+    text-decoration: none;
+    /* using the text-decoration : none , the underline is gone */
+}
+
+.menu-item:link {
+    color: blue;
+    /* unvisited links are initialized to blue */
+}
+
+.menu-item:visited {
+    color: green;
+    /* visited links are initialized to green */
+}
+
+.menu-item:hover {
+    color: red;
+    /* while hovering , the link color changes to red */
+}
+
+.menu-item:active {
+    color: purple;
+    /* when the link is active , change it to purple */
+}

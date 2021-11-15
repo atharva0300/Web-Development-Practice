@@ -1,0 +1,20 @@
+    #ordered-list {
+        list-style-type: upper-alpha;
+        /* the list gets changed to alphabetical order and upper case */
+        /* list-style-type: lower-alpha;
+        /* the list gets in alphabetical order , but lower case */
+        /* list-style-type : upper-roman */
+        /* the list gets changed to uppercase and roman numerals */
+        /* list-style-type: lower-roman;
+        /* the list gets changed to lowercase and roman numerals */
+        width: 500px;
+        list-style-position: inside;
+        /* removes  the indentation and the markers remain inside */
+    }
+    
+    #unordered-list {
+        list-style-type: square;
+        /* list items get chnged to square */
+        /* list items get chaned to circle */
+        /* list-style-type : none   - removes the bullets */
+    }

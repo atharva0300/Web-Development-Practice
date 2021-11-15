@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>
+        Title here
+    </title>
+    <link href="basics15_css.css" rel="stylesheet" type="text/css">
+    <! the rel , is used to define, the type of realtion between the html document and the css file >
+    <! type , is the file type >
+
+    <style>
+        #country-name {
+            font-size: 10px;
+        }
+        /* in the external , css file , the font-size for the country-name is given as 48px , 
+        but here , we internally initiale it as 10px. So,  as the priority of internal style is greater than the external style 
+        . the font-size will be 10px , ie , the internal style will over-ride the external style */
+    </style>
+
+</head>
+
+<body>
+    <! CSS Syntax >
+    <! p{ 
+        font-size : 24px ;
+        color : blue;
+    }
+    >
+
+    <! in the above coc , the 'p' is the selector >
+    <! the font-size and color is the declaration block >
+    <! #name - id >
+    <! name - class >
+    <! name(which is a tag ) - tag >
+    <! we use class, when you want to add the same style to multiple HTML elements  >
+
+
+    <! inline CSS >
+
+    <! priority of styles >
+    <! INline styles override the internal styles  >
+    <! internal styles override the extenal slides >
+
+    <div margin=0>
+        <img id="cover-pic" src="assets/game2.jpg" width="100%" height="50%">
+        <h1 id="country-name" style="font-size : 100px;">My Kingdom</h1>
+        <! in the internal stlye , the fnt-size of 10px. in the externa file , the font-size is 48px, but here , in inline styling , the font-size of 100px >
+        <! as per the priority of hte styling . inline >internal > external >
+        <! inline styling takes priority  >
+    </div>
+    <p class="country-description" style>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga exercitationem error maxime cupiditate? Repellat ab numquam, laboriosam autem, provident adipisci voluptatibus expedita voluptate neque ea eius consequuntur, perspiciatis odio eum libero veritatis.
+        Nemo numquam vitae voluptatibus nostrum maiores eveniet. Possimus ut eveniet numquam vel laborum, laudantium optio blanditiis illo, neque ducimus, saepe asperiores nisi cum labore ex tempore! Ab, incidunt aliquam laboriosam in quidem praesentium
+        dolorum, consequatur veritatis vel, illo dolorem laudantium nesciunt neque est dolor error voluptatibus deleniti maiores ullam nulla. Repudiandae dolor numquam necessitatibus exercitationem ipsam, laborum velit enim non alias eum reiciendis saepe
+        magnam quisquam facere commodi?
+    </p>
+
+    <p class="country-description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga exercitationem error maxime cupiditate? Repellat ab numquam, laboriosam autem, provident adipisci voluptatibus expedita voluptate neque ea eius consequuntur, perspiciatis odio eum libero veritatis.
+        Nemo numquam vitae voluptatibus nostrum maiores eveniet. Possimus ut eveniet numquam vel laborum, laudantium optio blanditiis illo, neque ducimus, saepe asperiores nisi cum labore ex tempore! Ab, incidunt aliquam laboriosam in quidem praesentium
+        dolorum, consequatur veritatis vel, illo dolorem laudantium nesciunt neque est dolor error voluptatibus deleniti maiores ullam nulla. Repudiandae dolor numquam necessitatibus exercitationem ipsam, laborum velit enim non alias eum reiciendis saepe
+        magnam quisquam facere commodi?
+    </p>
+
+
+
+
+
+</body>
+
+</html>

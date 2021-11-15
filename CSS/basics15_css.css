@@ -1,0 +1,31 @@
+#cover-pic {
+    width: "100%";
+    height: "auto";
+}
+
+#country-name {
+    font-size: 48px;
+    text-align: center;
+}
+
+.country-description {
+    font-size: "18px";
+    line-height: "1.4";
+    text-align: "center";
+}
+
+
+/* 
+re-creating the same country-description classs style 
+.country-description{
+    text-align : "left";
+}
+*/
+
+
+/* Now , there are 2 classes with the same name , but the textr-align in the first class style is 'center' 
+and in the second one it is to the 'left' .
+So , here, the last country-name , will be given higher priority , and the text will be aligned to the left.
+
+The order of the declaration matters 
+*/

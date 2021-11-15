@@ -1,0 +1,103 @@
+h1 {
+    color: blue;
+    text-align: right;
+    font-style: italic;
+    font-weight: 900;
+    text-decoration: overline;
+}
+
+p {
+    color: brown;
+    text-align: justify;
+    font-weight: 600px;
+    letter-spacing: 0px;
+    word-spacing: 8px;
+    line-height: 1.5;
+    font-family: 'Yuji Mai', serif;
+}
+
+#third-para {
+    border-style: dotted;
+    border-width: 6px;
+    border-color: red;
+}
+
+#fourth-para {
+    border-style: dashed;
+    border-width: 6px;
+    border-color: red;
+    border-radius: 20px;
+    /* curves the border */
+    /* higher the value , more is the curve at hte corners of the border */
+}
+
+#fifth-para {
+    border-top-style: solid;
+    border-right-style: dashed;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-width: 6px;
+    border-color: red;
+    /* different border styles on different sides */
+}
+
+
+/* in short hand specification : example - border : 4px solid blue ;
+The order , is very crucial.
+KEEP THE ORDE IN MIND 
+1. border width 
+2.border-style
+3.border-color
+
+*/
+
+
+/* 
+    for rgb colors ; the sequence is - red ,green , blue */
+
+#sixth-para {
+    border: 4px sold rgb(0, 0, 244);
+    border-top: 4px solid blue;
+    border-right: 4px dashed blue;
+    border-bottom: 4px dotted blue;
+    border-left: 4px double red;
+}
+
+
+/* Padding */
+
+#seventh-para {
+    border: 3px solid blue;
+    padding: 100px;
+    padding-top: 26px;
+    padding-right: 20px;
+    padding-left: 24px;
+    padding-top: 28px;
+    margin: 48px;
+    /* 48 pixels margin from all the sides */
+    /* padding gets overriden here */
+}
+
+
+/* padding : 16px 20px 24px 28px - the sequence is - top , right , bottom , left */
+
+
+/* it goes clock wise */
+
+
+/* padding : 24px 48px  - the sequence is - top & bottom , left & right   */
+
+
+/* Margin */
+
+
+/* Adding space outdie the botrder - ise margin */
+
+
+/* margin : 48px  - sequence - all the sides */
+
+
+/* margin : 1px 2px 3px 4px  - sequence - top , right,  bottom , left */
+
+
+/* margin : 1px 2px  - sequence  - top & bottom , right & left   */
