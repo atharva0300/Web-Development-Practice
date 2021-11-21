@@ -1,0 +1,100 @@
+header {
+    background-color: white;
+    width: 100%;
+    top: 0px;
+    height: 50px;
+    /* if the iamge/element is static and is positioned at top : 0 , 
+    ie - the top left corner of the page , overlapping the header page, 
+    then, setting the z-index of the header as 10px, will not bring the,
+    header forward and overlap the image/element, because , the z-index 
+    does not work with static positions */
+    /* to solve the problem, change the position of the element from 
+    static to relative */
+}
+
+#logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: blue;
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+
+.menu-item {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: back;
+    display: inline;
+    padding: 30px 20px 0px 20px;
+    margin-top: 30px;
+    padding-top: 30px;
+    position: relative;
+    top: 10px;
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+#wrapper {
+    width: 300px;
+    height: 100px;
+    background-color: lightskyblue;
+    padding-top: 200px;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+#image1 {
+    width: 300px;
+    height: 300px;
+    background-color: lightcoral;
+    position: relative;
+    top: -160px;
+    right: -40px;
+    /* relative, sets the element relative to the position of the outside elemnt > 
+}
+
+#image2 {
+    background-color: lightcoral;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    right: 0px;
+    bottom: 0px;
+    /* place sthe image at the bottom-right corner */
+}
+
+#wrapper2 {
+    background-color: lightcoral;
+    width: 300px;
+    height: 300px;
+}
+
+#image3 {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+#wrapper3 {
+    background-color: lightcoral;
+    width: 300px;
+    height: 300px;
+}
+
+#image4 {
+    width: 250px;
+    height: 250px;
+    position: sticky;
+    /* giving the condition , the condition when the element, starts behaving 
+    like fixed */
+    top: 500px;
+}
