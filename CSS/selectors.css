@@ -1,0 +1,27 @@
+h1,
+h2 {
+    background-color: blue;
+    color: red;
+}
+
+ul li {
+    color: orange;
+}
+
+li {
+    color: green;
+}
+
+.item {
+    background-color: red;
+    color: blue;
+}
+
+#list-item {
+    background-color: violet;
+    color: black;
+}
+
+input[type="email"] {
+    background-color: brown;
+}

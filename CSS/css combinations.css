@@ -1,0 +1,15 @@
+section p {
+    background-color: red;
+}
+
+section>p {
+    background-color: green;
+}
+
+h1+p {
+    background-color: yellow;
+}
+
+h1~p {
+    background-color: orange;
+}

@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>
+        Title here
+    </title>
+    <link href="css combinations.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <! body here >
+
+    <! CSS Combinations >
+    <! 1. inside section tag >
+    <!  paragraph >
+    <!  heading >
+    <! nested paragraph >
+
+    <! 2. Child combinator ( >)
+    <! background elenments will change to all >p elements , except nested programs >
+    <! because t is not an immediate child element >
+
+    <! 3. Adjacent Sibling ( + )
+    <! selects immediately following sibling of specific element >
+    <! elements sohuld be placed on the same level on the html elements tree >
+    <! and they should have same , parent as well >
+    <! example = h1 + p{} , the stlling will change for elements after h1 >
+
+    <! 4. General Sibling selector ( ~ )
+    <! h1 ~ p {}    , the styling will change for all the elements, will change>
+    <! for all the elements ,after the h1 tag , except the nested ones >
+
+    <! example >
+    <section>
+        <p>Paragraph</p>
+        <h1>Heading 1</h1>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <div>
+            <p>Nested Paragraph</p>
+        </div>
+        <p>Paragraph 4</p>
+        <p>Paragraph 5</p>
+    </section>
+</body>
+
+</html>
