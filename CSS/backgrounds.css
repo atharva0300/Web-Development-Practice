@@ -1,0 +1,36 @@
+                    div {
+                        width: 500px;
+                        height: 500px;
+                        border: 50px double red;
+                        /*double, inserts a double border */
+                        background-image: url(assets/game1.jpg);
+                        /* is the image path contains, spaces then you can put the url insode the quotes */
+                        /* Example : url('assets/abstract 1.jpg') */
+                        color: #fff;
+                        margin: 100px auto;
+                        background-size: 900px;
+                        /* we are changing the width of the image */
+                        /* to turn off the iage repeatition */
+                        background-repeat: no-repeat;
+                        /* repeat-x : allows only horizontal repeating */
+                        /* repeat-y : allows only vertical repeating */
+                        /* no-repeat : no repeatition */
+                        /* to set, which part of the image we want to be visible */
+                        background-position: -200px 15px;
+                        /* image gets moved 'width px' fromt the right , and 'top px' from the top*/
+                        /* background-attachment: fixed; */
+                        /* fixes the position of the background */
+                        /* background-origin : content-box; 
+            the background image, starts displaying, after the padding */
+                        /* background-origin : border-box ;
+            the image, displays asa  box;
+
+            /* background-clip : border-box;
+            same thing;*/
+                        background-origin: content-box;
+                        /* puts inside a content-box */
+                        background: green url(assets/game1.jpg) no-repeat center fixed/cover;
+                        /* short hand method for declaration */
+                        /* background : url(assets/game1.jpg) left top no-repeat /300px url(assets/game1.jpg) right bottom no-repeat/ 300px;
+                    */
+                    }

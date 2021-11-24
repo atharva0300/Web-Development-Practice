@@ -1,0 +1,74 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+    position: relative;
+    /* connecting the animation keyframe to the elemnet */
+    animation-name: anim;
+    animation-duration: 4s;
+    /* defining the animation duration for the element in seconds */
+    /* animation iteration count */
+    animation-iteration-count: 1;
+    /* defines, how many times we want the animation to be run */
+    /* infinite : , will run infinitely */
+    /* 1 : will run 1 time */
+    /* set the direction of animation */
+    animation-direction: reverse;
+    /* animation-direction : alternate; , alternate values animation are performed */
+    /* animation-direction : alternate-reverse; , alterates, forward then alternates backwards */
+    /* animation timing function */
+    animation-timing-function: linear;
+    /* sets the timing function of the animation */
+    /* linear : sets linear time function */
+    animation-fill-mode: forwards;
+    /* animation-fill-mode property gives us ability, to stop element, where it finished moving */
+    /* the animation will stop at the last position and won't goto the top */
+    /* animation-fill-mode : backwards ; , sets the starting position of the element, where it finishes *
+    /* animation-fill-mode : both ; , for both forward and backward */
+    /* animation property */
+    animation: anim 4s ease-in 2s infinite alternate both;
+    /* the short hand method for the above syntax */
+    /* in order */
+}
+
+@keyframes anim {
+    /* anim : name of the animation ( can be set to anything ) */
+    /* from, to define the starting style */
+    0% {
+        /* at 0% animation , or at the beginning */
+        left: 0;
+        top: 0;
+        background-color: orangered;
+    }
+    25% {
+        /* defining new styles here */
+        /* the to section */
+        /* at 25 % animation */
+        left: 500px;
+        top: 0;
+        background-color: green;
+    }
+    50% {
+        /* defining new styles here */
+        /* the to section */
+        /* at 50% animation */
+        left: 500px;
+        top: 500px;
+        background-color: goldenrod;
+    }
+    75% {
+        /* defining new styles here */
+        /* the to section */
+        left: 0px;
+        top: 500px;
+        background-color: royalblue;
+    }
+    100% {
+        /* defining new styles here */
+        /* the to section */
+        /* at 100% animation */
+        left: 0px;
+        top: 0px;
+        background-color: orangered;
+    }
+}

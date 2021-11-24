@@ -1,0 +1,39 @@
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: orangered;
+        font-size: 60px;
+        color: white;
+        text-align: center;
+        padding-top: 55px;
+        /* using the box-sizing property */
+        box-sizing: border-box;
+        /* transform code */
+        transform: translate(200px, 100px);
+        /* translates : used to translate the motion of the object in x and y direction */
+        /* 200px : move the element , by this distance in x direction */
+        /* 100px : move the element , by this distance in y direction */
+        /* to tanslate in y direction : translateY();
+        to tanslate in x direction : translateX();
+        */
+        transition: transform 1s;
+        /* sets the transformation time, for transition to 1s */
+    }
+    
+    .box:hover {
+        /*
+        transform: translate(100px, 200px);
+        /* translates ( moves ) the box to the position , x = 100px and y = 200px 
+            when the cursor is hovered over the image */
+        /* rotating the element */
+        /*
+        transform: rotate(-90deg);
+        /* +ve value, in rotate() defines , clockwise rotation */
+        /* -ve value, in rotate() defines , anti-clockwise rotation */
+        /* transform using scale method */
+        /* scale method increases or decreases size of an element */
+        transform: scale(1.5, 1.5);
+        /* parameters : scale(width , height ) */
+        /* to scale in x direction : scaleX(value) maintaining the height */
+        /* to scale in y direction : scaleY(value) maintaining the width  */
+    }

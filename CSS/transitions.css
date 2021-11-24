@@ -1,0 +1,27 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+    /* transition code */
+    transition-property: width;
+    /* transition duration : 1s,  sets the duration for hte transition to 1s */
+    transition: 1s;
+    /* starts the transition after the delay time */
+    /*
+    transition-delay: 1s;
+    /* sets the speed timing of the function */
+    transition-timing-function: ease-in-out;
+    /* ease : sets, a slow start , then fast , then ends slowly
+    /* ease-in-out : slow start and end */
+    transition-timing-function: cubic-bezier(.02, .97, .07, .32)
+    /* FOR INFO ON THIS : CHECK AT cubic-bezier.com website */
+    /* shorthand method */
+    /* transition: width 1s 1s ease-in, background-color 5s */
+    /* background-color 5s , sets the time duration , for the new background-color that has been set */
+}
+
+.box:hover {
+    width: 400px;
+    /* sets the width, when cursor is hovered over */
+    background-color: green;
+}
