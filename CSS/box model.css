@@ -1,0 +1,33 @@
+                body {
+                    margin: 0;
+                    /* sets the margin to 0 from the left */
+                }
+                
+                h1 {
+                    border-width: 5px;
+                    /* sets the border width to 5 px */
+                    border-style: solid;
+                    border-color: red;
+                    /* using the shorthad method */
+                    /* border: 5px red solid ; */
+                    padding-top: 30px;
+                    padding-right: 50px;
+                    padding-bottom: 40px;
+                    padding-left: 50px;
+                    /* or using the short had method */
+                    /* padding : top right bottom left */
+                    /* setting margin */
+                    margin-top: 50px;
+                    margin-right: 10px;
+                    margin-bottom: 20px;
+                    margin-left: 10px;
+                    /* or using the shorthand method */
+                    /* margin : top right bottom left ; */
+                    /* this sets the margi of teh box model */
+                    /* box sizing */
+                    width: 300px;
+                    height: 300px;
+                    /* this defines the size of the box model */
+                    /* box - sizing */
+                    box-sizing: border-box;
+                }

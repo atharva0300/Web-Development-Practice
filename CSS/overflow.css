@@ -1,0 +1,18 @@
+div {
+    width: 400px;
+    height: 200px;
+    border: 3px solid green;
+    background-color: grey;
+    /* set the overflow property */
+    overflow: auto;
+    /* scroll bar will appear when the content is overflowing */
+    /*
+    overflow : scroll ; 
+    scroll bar appears, even when the content is not oveflowing */
+    /* overflow in y direction 
+    overflow-y: scroll;
+    scrollbar appears, when the content overflows in y direction */
+    /*
+    overflow-x: scroll;
+    scrollbar appears, when the content overflows in x direction */
+}

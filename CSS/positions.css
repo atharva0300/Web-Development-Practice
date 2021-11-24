@@ -1,0 +1,49 @@
+.container {
+    background-color: orangered;
+    width: 700px;
+    height: 620px;
+    position: absolute;
+    /* all the child elements, get positioned wrt to the outer box */
+    /* by setting the position : to not-fixed position like absolute or relative; */
+}
+
+.box {
+    width: 350px;
+    height: 100px;
+    /* if the width and the height proprety os not defined , then the elemnts , below it act like, inkline elements */
+    font-size: 26px;
+    color: #fff;
+}
+
+.box-1 {
+    background-color: green;
+    position: absolute;
+    top: 300px;
+    bottom: 0;
+    top: 50px;
+    left: 200px;
+    /* partially covers, other boxes */
+    /* z - index  : top : +ve indedx */
+    /* z -index : behind : -ve index */
+    z-index: 1;
+    /* above */
+}
+
+.box-2 {
+    background-color: grey;
+    position: relative;
+    /* positions relative to the outer element */
+    left: 20px;
+    width: 500px;
+    height: 300px;
+    /* the width and height increases, but it didnt cover other elements */
+}
+
+.box-3 {
+    background-color: blue;
+    position: sticky;
+    bottom: -50px;
+    top: 30px;
+    /* condition : when the to reaches 30px ,then the position changes form absolute to sticky */
+    z-index: 0;
+}

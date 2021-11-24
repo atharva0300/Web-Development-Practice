@@ -1,0 +1,40 @@
+html {
+    font-size: 30px;
+}
+
+body {
+    font-size: 12px;
+}
+
+h1,
+p {
+    font-size: 24em;
+    /* or 24rem; */
+    /* cahnges the relative font-size with repspect to the font size used above : px */
+}
+
+div {
+    font-size: 10px;
+}
+
+h2 {
+    font-size: 100%;
+}
+
+section {
+    font-size: 30px;
+    background-color: orangered;
+    color: #fff;
+    width: 750vw;
+    /* vw : view width */
+    height: 100wh;
+    /* wh : width height  */
+}
+
+h2 {
+    font-size: 200%;
+}
+
+section div {
+    background-color: green;
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=M+PLUS+1+Code:wght@500&display=swap');
+h1 {
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-style: italic;
+}
+
+p {
+    font-family: 'Comforter Brush', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}

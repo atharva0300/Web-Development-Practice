@@ -1,0 +1,73 @@
+a:link {
+    font-size: 35px;
+    /* setting up the style for the link , before it has een used */
+    text-decoration: none;
+    color: green;
+}
+
+a:visited {
+    color: goldenrod;
+    /* style of the color when the link is visited */
+}
+
+a:hover {
+    color: grey;
+    /* styling the link, when the cursor is hovering */
+}
+
+a:active {
+    color: skyblue;
+    /* stylign the link, when the link is active */
+}
+
+.css content {
+    display: none;
+    /* hide the contents of the .css class element */
+}
+
+.css:hover .content {
+    /* when teh surcir hovers over the class .css  */
+    display: block;
+}
+
+ul {
+    font-size: 40px;
+    list-style-type: square;
+    /* type of the bullets of the items */
+    /* to keep it none , list -style : none ; */
+}
+
+ul li:first-child {
+    color: red;
+    /* fisrt list item becomes red */
+}
+
+ul li:last-child {
+    color: green;
+    /* last list item becomes green */
+}
+
+ul li:nth-child(3) {
+    color: blue;
+    /* changes the color of the 3rd item */
+}
+
+h2::first-letter {
+    /* the first letter of the g2 heading */
+    font-size: 30px;
+    font-style: italic;
+    color: goldenrod;
+}
+
+h2::before {
+    /* before thr heading 2 */
+    content: 'This is ';
+    /* adds, this is before the content, in h2::before*/
+    color: blue;
+}
+
+h2::after {
+    content: ' of Website';
+    font-size: 24px;
+    color: orange;
+}

@@ -1,0 +1,17 @@
+p {
+    color: white;
+    background-color: green;
+    /* changing hte size of the text  */
+    font-size: 20px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-weight: bold;
+    text-align: center;
+    display: inline;
+    /* displays in inline */
+    /* the text -align does not work for disaply : inline property */
+}
+
+div {
+    text-align: right;
+}
